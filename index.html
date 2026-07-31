@@ -472,6 +472,93 @@
             font-size: 0.75rem;
         }
 
+        /* Projects Section */
+        .projects {
+            padding: 8rem 0;
+            background: var(--cream);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .project-card {
+            background: white;
+            border: 1px solid rgba(212, 165, 116, 0.15);
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 0;
+            background: var(--gold);
+            transition: height 0.3s ease;
+        }
+
+        .project-card:hover::before {
+            height: 100%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .project-tag {
+            font-size: 0.65rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .project-card h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            color: var(--text-mid);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .project-link {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--navy);
+            text-decoration: none;
+            border-bottom: 1px solid var(--gold);
+            padding-bottom: 1px;
+            transition: color 0.2s ease;
+        }
+
+        .project-link:hover {
+            color: var(--gold);
+        }
+
         /* Testimonials Section */
         .testimonials {
             padding: 8rem 0;
@@ -717,7 +804,17 @@
             </div>
             <div class="experience-timeline">
                 <div class="timeline-item reveal">
-                    <div class="timeline-period">2024 – Present</div>
+                    <div class="timeline-period">Jul 2026 – Present</div>
+                    <h3 class="timeline-role">Freelance Product Manager</h3>
+                    <div class="timeline-company">Toptal — Global Freelance Talent Network</div>
+                    <ul class="timeline-highlights">
+                        <li>Vetted into Toptal's top 3% of product management talent</li>
+                        <li>Advising and delivering on fintech and regulated product strategy engagements</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-period">2024 – 2026</div>
                     <h3 class="timeline-role">Senior Product Manager</h3>
                     <div class="timeline-company">Holo Ltd. — DeFi & Distributed Applications Platform</div>
                     <ul class="timeline-highlights">
@@ -810,6 +907,28 @@
                     <p>ING Bank's official announcement of the spin-out of Pyctor — the institutional digital asset custody platform built on Tendermint with MPC cryptography. Coverage of the transition from in-house ING Ventures project to independent entity.</p>
                     <div class="writing-links">
                         <a href="https://www.ing.com/Newsroom/News/ING-spins-out-digital-assets-platform-Pyctor.htm" target="_blank" class="writing-link">Read press release</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Beyond the Day Job</div>
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card reveal">
+                    <div class="project-tag">Co-Founder — Consumer App</div>
+                    <h3>Taansing</h3>
+                    <p>Co-founded and building a mobile singing app that uses GRBAS-based voice analysis — grounded in published acoustic parameters like Jitter, Shimmer, and HNR — to help singers find songs that suit their voice, rather than chase generic notions of "good singing."</p>
+                    <div class="project-links">
+                        <a href="https://www.taansing.com" target="_blank" class="project-link">Visit site</a>
                     </div>
                 </div>
 
