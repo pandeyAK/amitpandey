@@ -523,6 +523,27 @@
             margin-bottom: 0.75rem;
         }
 
+        .project-logo {
+            height: 28px;
+            max-width: 150px;
+            object-fit: contain;
+            object-position: left;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .project-wordmark {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            color: var(--navy);
+            border: 1px solid var(--gold);
+            display: inline-block;
+            padding: 0.3rem 0.75rem;
+            margin-bottom: 1rem;
+        }
+
         .project-card h3 {
             font-family: 'Cormorant Garamond', serif;
             font-size: 1.4rem;
@@ -921,35 +942,57 @@
             <div class="projects-grid">
 
                 <div class="project-card reveal">
+                    <img src="https://pyctor.com/images/pyctor-900x400-78b5fe317f3c2edae3157215233b8024.svg?vsn=d" alt="Pyctor logo" class="project-logo">
                     <div class="project-tag">Head of Product | Co-Founder</div>
                     <h3>Pyctor</h3>
                     <p>Built and launched an institutional-grade decentralized custody platform from 0-1 on Tendermint blockchain using MPC protocol for regulated institutions — spun out of ING Ventures, leading to a successful exit and acquisition.</p>
+                    <div class="project-links">
+                        <a href="projects/pyctor.html" class="project-link">Case study &rarr;</a>
+                        <a href="https://pyctor.com" target="_blank" class="project-link">Visit site &nearr;</a>
+                    </div>
                 </div>
 
                 <div class="project-card reveal">
+                    <img src="https://holo.host/img/logos/holo-combined-logo.svg" alt="Holo logo" class="project-logo">
                     <div class="project-tag">Senior Product Manager — Holo</div>
                     <h3>Holo Edgenode</h3>
-                    <p>Launched an open-source OCI container to run Holochain applications on virtually any platform, onboarding 100+ users and 5+ applications while cutting deployment complexity by 60%.</p>
+                    <p>Replaced a fragile, hardware-locked Holochain deployment model with an open-source, Docker-based container — cutting deployment time from 2-3 days to a single CLI command, with 38K+ container downloads to date.</p>
+                    <div class="project-links">
+                        <a href="projects/holo-edgenode.html" class="project-link">Case study &rarr;</a>
+                        <a href="https://github.com/Holo-Host/edgenode" target="_blank" class="project-link">View on GitHub &nearr;</a>
+                    </div>
                 </div>
 
                 <div class="project-card reveal">
+                    <div class="project-wordmark">QREDO</div>
                     <div class="project-tag">Director of Product — Qredo</div>
                     <h3>Exchange Hub</h3>
-                    <p>Designed and shipped a one-stop shop to rebalance portfolios between 6+ exchanges and self-custody using an API-first approach, coordinating integrations across multiple liquidity venues.</p>
+                    <p>Built a unified command center inside Qredo's self-custody platform, letting institutional clients manage assets across 4+ exchanges without giving up self-custody — growing AUC to $390M in the first month.</p>
+                    <div class="project-links">
+                        <a href="projects/exchange-hub.html" class="project-link">Case study &rarr;</a>
+                        <a href="https://www.youtube.com/watch?v=a5kpbkcFeJ0" target="_blank" class="project-link">Watch demo &nearr;</a>
+                    </div>
                 </div>
 
                 <div class="project-card reveal">
+                    <div class="project-wordmark">QREDO</div>
                     <div class="project-tag">Director of Product — Qredo</div>
                     <h3>Fee Top-Up</h3>
-                    <p>Launched a fiat on-ramp integration (Banxa) letting institutional users top up directly inside Qredo — recovering $50,000+ in pending fees from 10,000+ users and directly impacting company revenue. Grew AUC to a peak of $390 million across my time on the platform.</p>
+                    <p>Built a fiat-to-QRDO on-ramp (Banxa-hosted checkout) directly into Qredo, removing a 20-minute off-platform detour — collecting $50K+ in fees within the first month and driving 10% MoM volume growth.</p>
+                    <div class="project-links">
+                        <a href="projects/fee-topup.html" class="project-link">Case study &rarr;</a>
+                        <a href="https://www.youtube.com/watch?v=gkS-qIxq2Qo" target="_blank" class="project-link">Watch demo &nearr;</a>
+                    </div>
                 </div>
 
                 <div class="project-card reveal">
+                    <div class="project-wordmark">TAANSING</div>
                     <div class="project-tag">Co-Founder — Consumer App</div>
                     <h3>Taansing</h3>
-                    <p>Co-founded and building a mobile singing app that uses GRBAS-based voice analysis — grounded in published acoustic parameters like Jitter, Shimmer, and HNR — to help singers find songs that suit their voice, rather than chase generic notions of "good singing."</p>
+                    <p>Co-founded and built a mobile singing app end-to-end with AI-assisted workflows — a GRBAS-based voice analysis engine gives users an objective diagnosis and matched songs, taking the product from concept to launch in 2 months.</p>
                     <div class="project-links">
-                        <a href="https://www.taansing.com" target="_blank" class="project-link">Visit site</a>
+                        <a href="projects/taansing.html" class="project-link">Case study &rarr;</a>
+                        <a href="https://www.taansing.com" target="_blank" class="project-link">Visit site &nearr;</a>
                     </div>
                 </div>
 
