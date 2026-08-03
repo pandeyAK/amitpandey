@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pyctor — Case Study | Amit Kumar Pandey</title>
+<title>Holo Edgenode — Case Study | Amit Kumar Pandey</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -56,12 +56,16 @@
     }
 
     .project-logo-wrap {
-        height: 44px;
+        display: inline-block;
+        background: white;
+        padding: 0.9rem 1.4rem;
+        border-radius: 6px;
         margin-bottom: 2rem;
     }
 
     .project-logo-wrap img {
-        height: 100%;
+        height: 32px;
+        display: block;
         object-fit: contain;
     }
 
@@ -182,23 +186,6 @@
         line-height: 1.8;
     }
 
-    /* Video */
-    .video-wrap {
-        position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
-        overflow: hidden;
-        margin-bottom: 3.5rem;
-        box-shadow: 0 16px 40px rgba(0,0,0,0.1);
-    }
-
-    .video-wrap iframe {
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        border: 0;
-    }
-
     /* Footer nav */
     .footer-nav {
         border-top: 1px solid rgba(212, 165, 116, 0.25);
@@ -237,72 +224,63 @@
     <header class="project-header">
         <div class="container">
             <div class="project-logo-wrap">
-                <img src="https://pyctor.com/images/pyctor-900x400-white-fa9032c112947a33f1964eb8f1d71166.svg?vsn=d" alt="Pyctor logo">
+                <img src="https://holo.host/img/logos/holo-combined-logo.svg" alt="Holo logo">
             </div>
-            <div class="project-tag">Head of Product | Co-Founder — ING Ventures</div>
-            <h1>Pyctor</h1>
-            <p class="subtitle">Institutional-grade digital asset custody, built from 0&rarr;1 inside ING Bank and spun out as an independent company.</p>
+            <div class="project-tag">Senior Product Manager — Holo Ltd.</div>
+            <h1>Holo Edgenode</h1>
+            <p class="subtitle">An open-source, Docker-based container that lets any device run Holochain applications — replacing a fragile, hardware-locked deployment model.</p>
 
             <div class="tag-row">
-                <span class="pill">Blockchain</span>
-                <span class="pill">Fintech</span>
-                <span class="pill">Banking</span>
+                <span class="pill">Internet Service Providers, Website Hosting &amp; Internet-related Services</span>
             </div>
             <div class="tag-row">
-                <span class="pill skill">Crypto</span>
-                <span class="pill skill">Product Strategy</span>
-                <span class="pill skill">Product Roadmaps</span>
-                <span class="pill skill">Go-to-Market (GTM) Strategy</span>
-                <span class="pill skill">Hardware Security Modules (HSMs)</span>
-                <span class="pill skill">Agile Software Development</span>
-                <span class="pill skill">Venture Funding</span>
+                <span class="pill skill">Nix</span>
+                <span class="pill skill">GitHub</span>
+                <span class="pill skill">Holochain</span>
+                <span class="pill skill">DigitalOcean</span>
             </div>
 
-            <a href="https://pyctor.com" target="_blank" class="site-link">Visit pyctor.com &nearr;</a>
+            <a href="https://github.com/Holo-Host/edgenode" target="_blank" class="site-link">View on GitHub &nearr;</a>
         </div>
     </header>
 
     <div class="container">
         <div class="metrics">
             <div class="metric-box">
-                <div class="metric-number">5</div>
-                <div class="metric-label">Tier-1 Banks Onboarded</div>
+                <div class="metric-number">38K+</div>
+                <div class="metric-label">Container Downloads</div>
             </div>
             <div class="metric-box">
-                <div class="metric-number">$100M</div>
-                <div class="metric-label">Assets Under Custody</div>
+                <div class="metric-number">1 Hour</div>
+                <div class="metric-label">Time to Deploy</div>
             </div>
             <div class="metric-box">
-                <div class="metric-number">3</div>
-                <div class="metric-label">Product Team Members</div>
+                <div class="metric-number">0</div>
+                <div class="metric-label">Hardware Dependencies</div>
             </div>
         </div>
 
         <div class="content-section">
             <div class="section-label">The Challenge</div>
-            <h2>No credible path to institutional-grade custody</h2>
-            <p>Regulated financial institutions had no credible way to custody and manage digital assets that satisfied both institutional governance/audit requirements and real regulatory scrutiny. Most crypto-native custody solutions were built around regulators rather than with them, leaving banks and institutions unable to adopt digital asset infrastructure without unacceptable compliance risk.</p>
+            <h2>2-3 days of hand-holding through vague NixOS errors</h2>
+            <p>Holo's original model required a physical device, the Holoport, running NixOS, with no terminal or keyboard, to host Holochain applications. In practice, this meant 2-3 days on average to successfully deploy a Holochain application, almost entirely spent on back-and-forth hand-holding through vague NixOS errors.</p>
         </div>
 
         <div class="content-section">
             <div class="section-label">The Solution</div>
-            <h2>A blockchain-native custody platform, designed with regulators from day one</h2>
-            <p>I built Pyctor from 0-to-1 for ING &mdash; a blockchain-native institutional custody platform on the Tendermint DLT using MPC (patent-pending US Provisional Application No. 63/030,540) cryptography. I designed compliant transaction workflows, dashboards, onboarding tools, and policy enforcement mechanisms tailored to institutional governance needs, while engaging directly with the UK FCA and Dutch AFM on architecture, AML controls, and audit readiness from the earliest design stages. The project was SOC2 and security audited.</p>
+            <h2>Any device, zero setup friction</h2>
+            <p>Any device, laptop, phone, or a $5 VPS, ran Holochain applications with zero setup friction, contributing spare compute back to the network. I drove user research, wrote the PRD, and led the combined engineering, UX, and QA squad through delivery. I ran Agile ceremonies, owned the backlog, and coordinated directly with external Holochain application developers who needed to prototype against the new architecture. I personally tested every release before it shipped and ran internal demos that proved the core claim: deployment time was now down to one CLI command.</p>
         </div>
 
         <div class="content-section">
             <div class="section-label">The Impact</div>
-            <h2>FCA sandbox launch, national press, and a successful exit</h2>
-            <p>I launched the project in the FCA sandbox with 5 tier-1 banks, using a security token issued by Soci&eacute;t&eacute; G&eacute;n&eacute;rale. The project was featured on CoinDesk, Forbes, and Reuters and led to a successful exit from ING Labs.</p>
-        </div>
-
-        <div class="video-wrap">
-            <iframe src="https://www.youtube.com/embed/Iza4rnllr8M" title="Pyctor introduction video" allowfullscreen></iframe>
+            <h2>38,600 container pulls and a durable model</h2>
+            <p>The EdgeNode image achieved 38,600 total container pulls. I reduced deployment time from 2-3 days to a single CLI command. The project remains active, and my ongoing contributions show the model's durability beyond the initial launch.</p>
         </div>
 
         <div class="footer-nav">
             <a href="../index.html#projects">&larr; Back to all projects</a>
-            <a href="https://pyctor.com" target="_blank">Visit pyctor.com &nearr;</a>
+            <a href="https://github.com/Holo-Host/edgenode" target="_blank">View on GitHub &nearr;</a>
         </div>
     </div>
 

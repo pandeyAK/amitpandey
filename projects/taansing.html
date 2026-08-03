@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pyctor — Case Study | Amit Kumar Pandey</title>
+<title>Taansing — Case Study | Amit Kumar Pandey</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -55,14 +55,16 @@
         color: white;
     }
 
-    .project-logo-wrap {
-        height: 44px;
+    .wordmark {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.6rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        color: var(--gold);
+        border: 1px solid rgba(212, 165, 116, 0.5);
+        display: inline-block;
+        padding: 0.5rem 1.1rem;
         margin-bottom: 2rem;
-    }
-
-    .project-logo-wrap img {
-        height: 100%;
-        object-fit: contain;
     }
 
     .project-header .project-tag {
@@ -125,8 +127,8 @@
 
     /* Metrics */
     .metrics {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        justify-content: center;
         gap: 1.5rem;
         margin: -2.5rem 0 4rem;
         position: relative;
@@ -136,7 +138,7 @@
     .metric-box {
         background: white;
         text-align: center;
-        padding: 1.75rem 1rem;
+        padding: 1.75rem 2.5rem;
         box-shadow: 0 16px 40px rgba(0,0,0,0.08);
         border-top: 3px solid var(--gold);
     }
@@ -182,21 +184,17 @@
         line-height: 1.8;
     }
 
-    /* Video */
-    .video-wrap {
-        position: relative;
-        padding-bottom: 56.25%;
-        height: 0;
-        overflow: hidden;
-        margin-bottom: 3.5rem;
-        box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+    .stack-box {
+        background: white;
+        border-left: 3px solid var(--gold);
+        padding: 1.5rem 1.75rem;
+        margin-top: 1.25rem;
+        font-size: 0.95rem;
+        color: var(--text-mid);
     }
 
-    .video-wrap iframe {
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        border: 0;
+    .stack-box strong {
+        color: var(--navy);
     }
 
     /* Footer nav */
@@ -222,7 +220,7 @@
 
     @media (max-width: 640px) {
         .project-header h1 { font-size: 2.2rem; }
-        .metrics { grid-template-columns: 1fr; margin-top: 1.5rem; }
+        .metrics { flex-direction: column; align-items: center; margin-top: 1.5rem; }
     }
 </style>
 </head>
@@ -236,73 +234,66 @@
 
     <header class="project-header">
         <div class="container">
-            <div class="project-logo-wrap">
-                <img src="https://pyctor.com/images/pyctor-900x400-white-fa9032c112947a33f1964eb8f1d71166.svg?vsn=d" alt="Pyctor logo">
-            </div>
-            <div class="project-tag">Head of Product | Co-Founder — ING Ventures</div>
-            <h1>Pyctor</h1>
-            <p class="subtitle">Institutional-grade digital asset custody, built from 0&rarr;1 inside ING Bank and spun out as an independent company.</p>
+            <div class="wordmark">TAANSING</div>
+            <div class="project-tag">Co-Founder — Consumer AI App</div>
+            <h1>Taansing</h1>
+            <p class="subtitle">A mobile singing app giving users an objective, clinical read on their voice — and the songs that actually suit it — built end-to-end with AI-assisted workflows.</p>
 
             <div class="tag-row">
-                <span class="pill">Blockchain</span>
-                <span class="pill">Fintech</span>
-                <span class="pill">Banking</span>
+                <span class="pill">Artificial Intelligence (AI)</span>
+                <span class="pill">Entertainment &amp; Leisure</span>
+                <span class="pill">Mobile App Development</span>
+                <span class="pill">Training</span>
             </div>
             <div class="tag-row">
-                <span class="pill skill">Crypto</span>
+                <span class="pill skill">Android</span>
+                <span class="pill skill">iOS</span>
+                <span class="pill skill">Artificial Intelligence (AI)</span>
                 <span class="pill skill">Product Strategy</span>
-                <span class="pill skill">Product Roadmaps</span>
+                <span class="pill skill">Sales</span>
+                <span class="pill skill">Hosting</span>
+                <span class="pill skill">Product Research</span>
+                <span class="pill skill">New Product Rollout</span>
                 <span class="pill skill">Go-to-Market (GTM) Strategy</span>
-                <span class="pill skill">Hardware Security Modules (HSMs)</span>
-                <span class="pill skill">Agile Software Development</span>
-                <span class="pill skill">Venture Funding</span>
             </div>
 
-            <a href="https://pyctor.com" target="_blank" class="site-link">Visit pyctor.com &nearr;</a>
+            <a href="https://taansing.com" target="_blank" class="site-link">Visit taansing.com &nearr;</a>
         </div>
     </header>
 
     <div class="container">
         <div class="metrics">
             <div class="metric-box">
-                <div class="metric-number">5</div>
-                <div class="metric-label">Tier-1 Banks Onboarded</div>
-            </div>
-            <div class="metric-box">
-                <div class="metric-number">$100M</div>
-                <div class="metric-label">Assets Under Custody</div>
-            </div>
-            <div class="metric-box">
-                <div class="metric-number">3</div>
-                <div class="metric-label">Product Team Members</div>
+                <div class="metric-number">2 Months</div>
+                <div class="metric-label">Concept to Launch</div>
             </div>
         </div>
 
         <div class="content-section">
             <div class="section-label">The Challenge</div>
-            <h2>No credible path to institutional-grade custody</h2>
-            <p>Regulated financial institutions had no credible way to custody and manage digital assets that satisfied both institutional governance/audit requirements and real regulatory scrutiny. Most crypto-native custody solutions were built around regulators rather than with them, leaving banks and institutions unable to adopt digital asset infrastructure without unacceptable compliance risk.</p>
+            <h2>Generic advice, and nothing that makes people come back</h2>
+            <p>As a personal side project, the goal was twofold: test how far AI-assisted tooling could carry a small team through genuinely end-to-end product development &mdash; research, design, and engineering &mdash; and solve a real gap in the singing-app market, where most apps give generic advice instead of an objective read on a user's actual voice, and struggle to keep users coming back long enough to improve.</p>
         </div>
 
         <div class="content-section">
             <div class="section-label">The Solution</div>
-            <h2>A blockchain-native custody platform, designed with regulators from day one</h2>
-            <p>I built Pyctor from 0-to-1 for ING &mdash; a blockchain-native institutional custody platform on the Tendermint DLT using MPC (patent-pending US Provisional Application No. 63/030,540) cryptography. I designed compliant transaction workflows, dashboards, onboarding tools, and policy enforcement mechanisms tailored to institutional governance needs, while engaging directly with the UK FCA and Dutch AFM on architecture, AML controls, and audit readiness from the earliest design stages. The project was SOC2 and security audited.</p>
+            <h2>An objective voice diagnosis, built almost entirely with AI</h2>
+            <p>I founded Taansing (initially as a hobby project), built almost entirely with AI-assisted workflows across the stack &mdash; from product research and UX/brand design to Android-native engineering in Kotlin/Jetpack. At the core, the solution is a GRBAS-based voice analysis engine grounded in published clinical acoustic parameters (Jitter, Shimmer, HNR) that gives users an objective diagnosis of their voice and recommends songs matched to it, paired with gamified retention mechanics (pitch highway, Daily Voice Check, Challenge Mode) to tackle the habit-formation problem.</p>
+
+            <div class="stack-box">
+                <strong>The AI-native build stack:</strong> Cursor and Claude Code connected via MCP into Replit, backed by a dedicated context library and a governance/eval layer to keep AI-generated work reliable across the stack.
+            </div>
         </div>
 
         <div class="content-section">
             <div class="section-label">The Impact</div>
-            <h2>FCA sandbox launch, national press, and a successful exit</h2>
-            <p>I launched the project in the FCA sandbox with 5 tier-1 banks, using a security token issued by Soci&eacute;t&eacute; G&eacute;n&eacute;rale. The project was featured on CoinDesk, Forbes, and Reuters and led to a successful exit from ING Labs.</p>
-        </div>
-
-        <div class="video-wrap">
-            <iframe src="https://www.youtube.com/embed/Iza4rnllr8M" title="Pyctor introduction video" allowfullscreen></iframe>
+            <h2>0 to 1, bootstrapped</h2>
+            <p>I took the consumer-facing product from 0 to 1, from concept to a fully branded, working app, end to end: product strategy, UX, technical partnerships, and go-to-market, while deliberately bootstrapping rather than raising early.</p>
         </div>
 
         <div class="footer-nav">
             <a href="../index.html#projects">&larr; Back to all projects</a>
-            <a href="https://pyctor.com" target="_blank">Visit pyctor.com &nearr;</a>
+            <a href="https://taansing.com" target="_blank">Visit taansing.com &nearr;</a>
         </div>
     </div>
 
